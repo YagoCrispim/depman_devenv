@@ -1,0 +1,4 @@
+This package simulates a package with many "exported" functions AND circular dependencies
+
+- Circular dep
+  - Package three depends on package four and package four depends on package three

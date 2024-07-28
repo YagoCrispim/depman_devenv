@@ -1,0 +1,5 @@
+{
+  "packages": {
+    "package_three": "file:../test_packages/package_three"
+  }
+}

@@ -1,0 +1,27 @@
+#/bin/bash
+
+OPTION=$1
+PARAM=$3
+
+if [ "$OPTION" = "clone" ]; then
+  ./scripts/clone.sh
+  exit
+fi
+
+if [ "$OPTION" = "pull" ]; then
+  ./scripts/pull.sh
+  exit
+fi
+
+if [ "$OPTION" = "commit" ]; then
+  ./scripts/commit.sh $2
+  exit
+fi
+
+if [ "$OPTION" = "status" ]; then
+  ./scripts/status.sh
+  exit
+fi
+
+echo "----- Usage -----"
+echo "./cli.sh clone|pull|commit \"message\"|status"

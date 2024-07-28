@@ -1,0 +1,22 @@
+#/bin/bash
+
+OPTION=$1
+PARAM=$3
+
+if [ "$OPTION" = "dev" ]; then
+  ./scripts/dev.sh
+  exit
+fi
+
+if [ "$OPTION" = "run" ]; then
+  ./scripts/run.sh
+  exit
+fi
+
+if [ "$OPTION" = "reinstall" ]; then
+  ./scripts/run.sh
+  exit
+fi
+
+echo "----- Usage -----"
+echo "./cli.sh run|dev|reinstall"

@@ -1,0 +1,11 @@
+{
+  "configs": {
+    "deps_folder": "lua_modules",
+    "entrypoint": "sandbox/main.lua"
+  },
+  "packages": {
+    "package_one": "file:../test_packages/package_one",
+    "package_two": "file:../test_packages/package_two",
+    "package_three": "file:../test_packages/package_three"
+  }
+}
